@@ -12,6 +12,7 @@ nation-building-game/
 │   └── css/                  # スタイルシート
 │       └── style.css         # ゲームのデザイン
 └── README.md                 # プロジェクトの説明ファイル
+index.html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -35,6 +36,7 @@ nation-building-game/
     <script src="src/js/main.js"></script>
 </body>
 </html>
+src/css/style.css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -67,6 +69,7 @@ main {
     background-color: #e8e8e8;
     border: 2px solid #ddd;
 }
+src/js/main.js
 document.addEventListener("DOMContentLoaded", () => {
     // ゲームの初期化処理
     initializeGame();
@@ -85,6 +88,7 @@ function startGame() {
     // ゲームを開始する処理
     console.log("ゲームスタート！");
 }
+assets/sprites/
 // 例えば、兵士のドット絵を描画する関数
 function drawSoldier(x, y) {
     const soldier = new Image();
@@ -98,6 +102,7 @@ function drawSoldier(x, y) {
 }
 npm init -y
 npm install express socket.io
+server.js
 const express = require('express');
 const socketIo = require('socket.io');
 const http = require('http');
